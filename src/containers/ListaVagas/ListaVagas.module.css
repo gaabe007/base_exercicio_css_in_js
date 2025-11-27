@@ -1,13 +1,18 @@
-.vagas {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 16px;
-  margin-top: 32px;
-}
+// ListaVagasStyles.ts
+import styled from "styled-components";
 
-@media (max-width: 768px) {
-  .vagas {
-    grid-template-columns: 1fr;
+export const ListaContainer = styled.div`
+  width: 100%;
+`;
+
+export const VagasList = styled.ul`
+  margin-top: 32px;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    gap: 12px;
   }
-}
+`;
